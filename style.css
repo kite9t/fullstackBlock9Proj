@@ -8,30 +8,50 @@
     text-shadow: 20em, 20em, 20em, #610F7F;
 }
 header{
-    position:fixed;
+    position:fixed; /* header will be visible when you scroll down */
     font-size: x-large;
     text-align: right;
     padding: 1em;
-    top:0;
+    top:0; /*create header background flushed to edges */
     left:0;
     right:0;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-image: url('https://img.freepik.com/premium-vector/abstract-colorful-pastel-wave-background_442940-333.jpg');
+    background-attachment: fixed; /* see a portion of the background image */
+    background-size: 100% 100%; /*adjust image stretch across size of the window */
+    background-image: url('./img/headerImg1.avif');
 }
 
 footer{
     padding: 2em;
-    background-attachment: fixed;
+    background-attachment: fixed; /* when scrolling, background image for footer changes */
     background-size: 100% 100%;
-    background-image:url('https://img.freepik.com/free-vector/organic-white-backgroun_1199-324.jpg?w=2000');
+    background-image:url('./img/footerImg1.avif');
 }
 body{
     background-size: 100% 100%;
-    background-image: url('https://img.freepik.com/premium-vector/modern-white-gradient-banner-with-abstract-shapes_278222-3178.jpg');
+    background-image: url('./img/bodyImg1.avif');
 }
 footer{
     text-align: center;
     font-weight: 900;
     color: #D8315B;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    display:block;
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max height: 300px;
+    border: 5px solid #555;
+    margin: 20px;
+}
+p{
+    margin: 20px;
+}
+a:hover{
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
 }
