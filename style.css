@@ -39,6 +39,20 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+.polaroid{
+    width: 28%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    justify-content: center;
+    text-align: center;
+}
+.caption{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
 img{
     display:block;
     width: auto;
@@ -54,4 +68,17 @@ p{
 a:hover{
     box-shadow: inset 100px 0 0 0 #54b3d6;
     color: white;
+}
+h1{
+    margin-top:5em;
+}
+
+button {
+    border-radius: 45%;
+    border-color: black;
+    cursor: pointer;
+
+}
+form{
+    margin-bottom: 5em;
 }
